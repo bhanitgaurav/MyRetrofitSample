@@ -1,10 +1,10 @@
 package com.bhanit.myretrofit
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.lifecycleScope
 import com.bhanit.myretrofit.data.DataModel
@@ -71,9 +71,9 @@ class MainActivity : AppCompatActivity() {
 
                 showToast("response is mapped into model $jsonObject")
 
-            } catch (Ex: Exception) {
-                Log.e("Error", Ex.localizedMessage as String)
-                showToast(Ex.localizedMessage as String)
+            } catch (ex: Exception) {
+                Log.e("Error", ex.localizedMessage as String)
+                showToast(ex.localizedMessage as String)
             }
         }
 
